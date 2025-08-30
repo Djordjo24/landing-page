@@ -1,0 +1,21 @@
+.aboutSection {
+  padding: 40px 16px;
+}
+
+.aboutSectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aboutUsText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.aboutUsText p {
+  margin: 0;
+  font-size: 15px;
+  color: #667085;
+}

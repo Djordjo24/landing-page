@@ -1,0 +1,67 @@
+.heroSection {
+  width: 100%;
+  height: 609px;
+  background: radial-gradient(circle, #0000 0%, #000 100%);
+  background-image: url("../assets/images/golden-retriever.png");
+  background-size: cover;
+  background-position: 24%;
+  color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 15px 0 15px;
+}
+
+.navbarLogo {
+  display: flex;
+  gap: 11px;
+}
+
+.navbarLogo h1 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.navbarMenu svg {
+  cursor: pointer;
+}
+
+.heroContent {
+  padding: 112px 50px 81px 27px;
+}
+
+.heroTextWrapper {
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.heroTextWrapper h1 {
+  font-size: 30px;
+  line-height: 130%;
+  letter-spacing: 2%;
+  margin: 0;
+}
+
+.heroTextWrapper p {
+  font-size: 14px;
+  line-height: 120%;
+  /* font-weight: 600; */
+}
+
+.heroButton {
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  font-size: 16px;
+  font-weight: 600px;
+  line-height: 28px;
+  background-color: transparent;
+  padding: 16px 28px;
+  gap: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+}
