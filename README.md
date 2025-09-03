@@ -15,7 +15,12 @@ Styling: HTML, CSS, Responsive Design
 2. Install dependencies:
    npm install
 
-3. Start the development server:
+3. Update node version:
+   nvm use
+
+   \*If you don’t have the required Node.js version installed, run nvm install first.
+
+4. Start the development server:
    npm run dev
 
 The project will be available at http://localhost:5173/ (or the port assigned by Vite).
