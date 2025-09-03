@@ -1,0 +1,203 @@
+.contactWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  padding: 0 16px;
+}
+
+.contactInfo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 31px;
+  column-gap: 21px;
+}
+
+.contactForm {
+  border-radius: 10px;
+  padding: 26px 21px;
+  background-color: #ffffff;
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  color: #101828;
+}
+
+.formFields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fullNameWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fullName {
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstName,
+.lastName,
+.email,
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.firstName label,
+.lastName label,
+.email label,
+.message label {
+  font-size: 9px;
+  line-height: 13px;
+  font-weight: 500;
+  color: #344054;
+}
+
+.firstName input,
+.lastName input,
+.email input,
+.message textarea {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #d0d5dd;
+  display: flex;
+  gap: 5px;
+  box-shadow: 0px 0.66px 1.31px 0px rgba(16, 24, 40, 0.05);
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #667085;
+}
+
+.fullNameWrapper p,
+.email p,
+.message p {
+  font-size: 8px;
+  line-height: 12px;
+  color: #667085;
+  font-weight: 400;
+  margin: 0;
+}
+
+.message textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.checkPrivacy {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 9px;
+  line-height: 13px;
+  font-weight: 500;
+  color: #344054;
+}
+
+.checkPrivacy input {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d0d5dd;
+  border-radius: 4px;
+}
+
+.checkPrivacy label {
+  color: #667085;
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.checkPrivacy label span {
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
+.submitBtn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  padding: 13px 16px;
+  border: 1px solid #101828;
+  background: linear-gradient(90deg, #101828, #233250);
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.submitBtn:active {
+  transform: scale(0.98);
+}
+
+@media (min-width: 768px) {
+  .contactWrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contactForm {
+    border-radius: 16px;
+    padding: 40px 32px;
+  }
+  .contactForm form {
+    gap: 32px;
+  }
+  .formFields {
+    gap: 24px;
+  }
+  .fullName {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .contactInfo {
+    gap: 48px;
+  }
+  .fullNameWrapper p,
+  .email p,
+  .message p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .firstName input,
+  .lastName input,
+  .email input,
+  .message textarea {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .firstName label,
+  .lastName label,
+  .email label,
+  .message label {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .checkPrivacy label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .submitBtn {
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contactWrapper {
+    flex-direction: row-reverse;
+    padding: 0 32px;
+  }
+}

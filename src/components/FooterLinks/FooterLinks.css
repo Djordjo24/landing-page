@@ -1,0 +1,22 @@
+.footerLinksSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footerLinksSection h3 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+}
+
+.footerLinksSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

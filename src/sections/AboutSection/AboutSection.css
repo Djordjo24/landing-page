@@ -1,0 +1,63 @@
+.aboutUsText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.aboutUsText p {
+  margin: 0;
+  font-size: 15px;
+  color: #667085;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .aboutUsWrapper {
+    border: 0.2px solid rgb(147, 146, 146);
+    padding: 58px 34px;
+    margin: 0 40px;
+  }
+
+  .aboutUsText p {
+    font-size: 21px;
+    line-height: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .aboutUsWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .aboutUsText {
+    width: 40%;
+  }
+  .catsImages {
+    width: 60%;
+    position: relative;
+  }
+
+  .brownCatWrapper {
+    margin: 0 0 100px 100px;
+    aspect-ratio: 3.9/4;
+    border-radius: 10px;
+    background-image: url("../../assets/images/brown-cat.png");
+    background-size: 140%;
+    background-position: 40% 70%;
+  }
+
+  .yellowCatWrapper {
+    background-image: url("../../assets/images/yellow-cat.png");
+    background-size: 150%;
+    background-position: 50% 80%;
+    border-radius: 10px;
+    width: 40%;
+    aspect-ratio: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: 15px -15px 0 #ffffff;
+  }
+}

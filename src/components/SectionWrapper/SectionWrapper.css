@@ -1,0 +1,29 @@
+.section {
+  padding: 40px 16px;
+}
+
+.sectionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.teget {
+  background-color: #101828;
+  color: white;
+}
+
+.white {
+  background-color: white;
+  color: #101828;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 70px 80px;
+  }
+
+  .sectionWrapper {
+    gap: 40px;
+  }
+}

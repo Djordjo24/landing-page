@@ -2,4 +2,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "FormativeTrial", sans-serif;
+}
+
+@font-face {
+  font-family: "FormativeTrial";
+  src: url("./assets/fonts/Formative/FormativeTrial-Regular.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }

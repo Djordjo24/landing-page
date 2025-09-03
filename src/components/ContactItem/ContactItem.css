@@ -1,0 +1,57 @@
+.contactItem {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  font-style: normal;
+}
+
+.contactItem h4 {
+  font-size: 13px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: 400;
+  margin: 0;
+}
+
+.contactItem p {
+  font-size: 10px;
+  line-height: 16px;
+  color: #cecece;
+  font-weight: 400;
+  margin: 0;
+}
+
+.contactItem button {
+  font-size: 10px;
+  line-height: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  width: fit-content;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 0;
+}
+
+.contactItem button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (min-width: 768px) {
+  .contactItem {
+    gap: 16px;
+  }
+  .contactItem h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .contactItem p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contactItem button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

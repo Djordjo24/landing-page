@@ -1,0 +1,21 @@
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 12.54px;
+}
+
+.socialIcons svg {
+  color: #98a2b3;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .socialIcons {
+    justify-content: start;
+    gap: 20px;
+  }
+  .socialIcons svg {
+    min-width: 24px;
+    min-height: 20px;
+  }
+}

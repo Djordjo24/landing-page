@@ -1,0 +1,30 @@
+.shopCategoryBtn {
+  padding: 5px 10px;
+  font-size: 15px;
+  border: none;
+  background-color: transparent;
+  margin: 10px 0;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+}
+
+.shopCategoryBtn.active {
+  color: #ffffff;
+  background: linear-gradient(90deg, #101828, #233250);
+  border: 1px solid #101828;
+  border-radius: 8px;
+  padding: 10px 16px;
+  display: flex;
+  width: fit-content;
+}
+
+.shopCategoryBtn:hover {
+  transform: scale(1.33);
+}
+@media (min-width: 768px) {
+  .shopCategoryBtn {
+    font-size: 20px;
+    line-height: 100%;
+  }
+}
