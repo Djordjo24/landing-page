@@ -13,13 +13,20 @@ const ShopSection = () => {
   const [viewMore, setViewMore] = useState(false);
 
   const updatedProductCards =
-    selectedCategory === "Random" || selectedCategory === ""
+    selectedCategory === ""
+      ? productCards
+      : selectedCategory === "Random"
       ? shufle(productCards)
       : productCards.filter((card) => card.category === selectedCategory);
 
   const handleCategoryClick = (category) => setSelectedCategory(category);
 
-  const handleViewMore = () => setViewMore(true);
+  const handleViewMore = () => {
+    if (selectedCategory === "") {
+      setSelectedCategory("");
+    }
+    setViewMore(true);
+  };
 
   return (
     <SectionWrapper colorsComb="white">
@@ -60,9 +67,10 @@ const ShopSection = () => {
           </ul>
 
           <div className="viewMoreBtn">
-            {!viewMore && (
-              <button onClick={handleViewMore}>View More &gt;&gt;&gt;</button>
-            )}
+            {!viewMore &&
+              (selectedCategory === "" || selectedCategory === "Random") && (
+                <button onClick={handleViewMore}>View More &gt;&gt;&gt;</button>
+              )}
           </div>
         </div>
       </div>
