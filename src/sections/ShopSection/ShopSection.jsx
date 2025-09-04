@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./ShopSection.css";
 import { shopCategories } from "../../mockData/mockData.js";
 import { productCards } from "../../mockData/mockData.js";
@@ -11,20 +11,27 @@ import { shufle } from "../../utils/utils.js";
 const ShopSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [viewMore, setViewMore] = useState(false);
+  const [randomCards, setRandomCards] = useState([]);
+
+  useEffect(() => {
+    if (selectedCategory === "Random") {
+      setRandomCards(shufle(productCards));
+    }
+  }, [selectedCategory]);
 
   const updatedProductCards =
     selectedCategory === ""
       ? productCards
       : selectedCategory === "Random"
-      ? shufle(productCards)
+      ? randomCards
       : productCards.filter((card) => card.category === selectedCategory);
 
-  const handleCategoryClick = (category) => setSelectedCategory(category);
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category);
+    setViewMore(false);
+  };
 
   const handleViewMore = () => {
-    if (selectedCategory === "") {
-      setSelectedCategory("");
-    }
     setViewMore(true);
   };
 
@@ -67,10 +74,9 @@ const ShopSection = () => {
           </ul>
 
           <div className="viewMoreBtn">
-            {!viewMore &&
-              (selectedCategory === "" || selectedCategory === "Random") && (
-                <button onClick={handleViewMore}>View More &gt;&gt;&gt;</button>
-              )}
+            {!viewMore && updatedProductCards.length > 3 && (
+              <button onClick={handleViewMore}>View More &gt;&gt;&gt;</button>
+            )}
           </div>
         </div>
       </div>
